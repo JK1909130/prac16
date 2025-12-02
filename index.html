@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition Squares</title>
+    <style>
+        .square {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px;
+    transition: all 0.4s ease;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
+
+
+        /* Square 1: gets longer */
+        #sq1:hover {
+            width: 100%;
+        }
+
+        /* Square 2: gets larger */
+        #sq2:hover {
+            width: 300px;
+            height: 300px;
+            line-height: 30px;
+            transition-duration: 10s;
+        }
+    </style>
+</head>
+<body>
+
+<h2>• Mouse hover square 1: the square becomes longer and span the entire screen</h2>
+<h2>• Mouse hover square 2: the square becomes larger very slowly</h2>
+
+<div id="sq1" class="square">1</div>
+<br>
+<div id="sq2" class="square">2</div>
+
+</body>
+</html>
